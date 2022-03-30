@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filas y columnas Bootstrap</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  </head>
+  <body>
+    <style>
+      [class^="col"]:nth-of-type(even) {
+        background-color: teal;
+      }
+      [class^="col"]:nth-of-type(odd) {
+        background-color: orange;
+      }
+    </style>
+    <div class="container">
+      <!-- <div class="row">
+               <div class="col">Columna 1</div>
+               <div class="col">Columna 2</div>
+               <div class="col">Columna 3</div>
+          </div>
+          <div class="row">
+               <div class="col">Clase col</div>
+               <div class="col-auto">Clase col-auto</div>
+               <div class="col">Clase col</div>
+          </div>
+          <div class="row">
+               <div class="col-4">
+                    Clase col-4
+               </div>
+               <div class="col-3">
+                    Clase col-3
+               </div>
+               <div class="col-3">
+                    Clase col-3
+               </div>
+               <div class="col-8">
+                    Clase col-8
+               </div>
+          </div>
+          <div class="row" >
+               <div class="col-12 col-md-6 col-lg-9">
+                    col-12 col-md-6 col-lg-9
+               </div>
+               <div class="col-12 col-md-6 col-lg-3">
+                    col-12 col-md-6 col-lg-3
+               </div>
+          </div>
+          <div class="row">
+               <div class="col-4">Columna 1</div>
+               <div class="col-4">Columna 2</div>
+               <div class="w-100"></div>
+               <div class="col-4">Columna 3</div>
+               <div class="col-4">Columna 4</div>
+          </div>  -->
+      <!-- <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+        <div class="col">Columna</div>
+        <div class="col">Columna</div>
+        <div class="col">Columna</div>
+        <div class="col">Columna</div>
+        <div class="col">Columna</div>
+        <div class="col">Columna</div>
+        <div class="col">Columna</div>
+      </div> -->
+      <section class="row">
+        <article class="col-4">Columna 1 impar</article>
+        <article class="col-4">Columna 2 par</article>
+        <div class="w-100"></div>
+        <article class="col-4">Columna 3 impar</article>
+        <article class="col-4">Columna 4 par</article>
+      </section>
+    </div>
+
+    <!-- Js Bootstrap -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

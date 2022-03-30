@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Textos</title>
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row row-cols-1">
+        <h1>Textos</h1>
+        <hr />
+        <h2>Ajuste y desbordamiento</h2>
+        <div class="col-6 bg-light">
+          <p
+            class="bg-primary text-wrap badge"
+            style="width: 80px; height: 80px;"
+          >
+            Este texto debe ajustarse
+          </p>
+        </div>
+        <div class="col-6">
+          <span
+            class="bg-success text-truncate d-block"
+            style="width: 80px; height: 80px;"
+          >
+            Este texto debe ajustarse
+          </span>
+        </div>
+        <hr />
+
+        <h2>Decoración de texto</h2>
+        <a href="#" class="text-decoration-none">Link 1</a>
+        <hr />
+
+        <h2>Reestablcer color</h2>
+        <p class="text-success">
+          Este texto es de color verde y el
+          <a href="#" class="text-reset">
+            ancla lo tiene que heredar
+          </a>
+        </p>
+        <hr />
+
+        <h2>Cursivas</h2>
+        <p class="font-italic">Texto en cursivas</p>
+        <hr />
+
+        <h2>Peso de fuente</h2>
+        <p class="font-weight-bold">Texto en negritas</p>
+        <p class="font-weight-bolder">Texto de mas peso que negritas</p>
+        <p class="font-weight-normal">Texto peso normal</p>
+        <p class="font-weight-light">Texto peso ligero</p>
+        <p class="font-weight-lighter">Texto peso más ligero</p>
+        <hr />
+
+        <h2>Transformación</h2>
+        <p class="text-lowercase">Transformación minúscula</p>
+        <p class="text-uppercase">Transformación mayúscula</p>
+        <p class="text-capitalize">Transformación capital</p>
+        <hr />
+
+        <h2>Alineación</h2>
+        <p class="text-left">Izquierda</p>
+        <p class="text-right">Derecha</p>
+        <p class="text-center">Centro</p>
+        <p class="text-justify">
+          Justificado.
+        </p>
+        <p class="text-direccion text-center text-md-right text-lg-left">
+          Pantalla especial: center right izquierda
+        </p>
+        <hr />
+      </div>
+    </div>
+
+    <!-- Jquery -->
+    <script src="./js/jquery-3.5.0.min.js"></script>
+    <!-- Popper -->
+    <script src="./js/popper.min.js"></script>
+    <!-- JS Bootstrap -->
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>

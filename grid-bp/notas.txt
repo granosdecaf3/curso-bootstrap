@@ -1,0 +1,150 @@
+Bootstrap
+______________
+📒 Clases CSS Layout
+     📒 Contenedor
+          📝 container
+               Centrar el contenido 
+
+          📝 container-tamaño
+               Tamaños --> sm, md, lg, xl, xxl
+               Centrar el contenido del elemento en un tamaño especial. 
+
+          📝 container-fluid
+               Abarcar el 100% del ancho de la página en todos los tamaños. 
+     
+     📒 Fila
+          📝 row
+               🔸 row-cols-numero
+               
+               🔸 row-cols-tamaño-numero
+                         Menos de 576px
+                    sm   Más de 576px y menos de 768px
+                    md   Más de 768px y menos de 992px
+                    lg   Más de 992px y menos de 1200px
+                    xl   Más de 1200px y menos de 1400px
+                    xxl  Más de 1400px
+               
+               🔸 row-cols-auto
+                    El ancho de las columnas que están dentro de la row va ser igual al contenido que guardan.
+
+     📒 Columna
+          📝 col
+               🔸 col
+                    Dividir las 12 columnas en el número de columnas que hay dentro de un row. 
+               
+               🔸 col-auto
+                    El ancho del elemento es igual a su contenido. 
+
+               🔸 col-numero
+                    El ancho de columna es igual al número que le pases. 
+
+               🔸 col-tamaño
+                         Menos de 576px
+                    sm   Más de 576px y menos de 768px
+                    md   Más de 768px y menos de 992px
+                    lg   Más de 992px y menos de 1200px
+                    xl   Más de 1200px y menos de 1400px
+                    xxl  Más de 1400px
+          
+               🔸 col-tamaño-auto
+
+               🔸 col-tamaño-numero
+     
+          📝 w-100
+     
+     📒 Alineación
+     
+          📝 Sintaxis: 
+             eje-modo-ubicación
+
+          Eje: 
+               main axis --> justify
+               cross axis--> align
+
+          Modo:
+               content --> Grupo 
+               items   --> línea
+               self    --> Individual
+          
+          Ubicación 
+               align: start  --> inicio 
+                      center --> centro
+                      end    --> fin
+
+               justify: start  --> inicio
+                        center --> centro
+                        end    --> final
+                        around --> alrededor
+                        between--> entre
+                        evenly --> igualmente
+
+     📒 no-gutters g-0 
+          📝 Gutter en los cuatro lados
+               🔸 g-valor
+               🔸 g-pantalla-valor
+               
+               Valor:
+                    0, 1, 2, 3, 4, 5
+               
+               Pantalla:
+                    xs, sm, md, lg, xl, xxl
+               
+          📝 Gutters en horizontal
+               🔸 gx-valor
+               🔸 gx-pantalla-valor
+               
+               Valor:
+                    0, 1, 2, 3, 4, 5
+               
+               Pantalla:
+                    xs, sm, md, lg, xl, xxl
+               
+          📝 Guttters en vertical
+               🔸 gy-valor
+               🔸 gy-pantalla-valor
+               
+               Valor:
+                    0, 1, 2, 3, 4, 5
+               
+               Pantalla:
+                    xs, sm, md, lg, xl, xxl
+               
+     📒 Desplazamiento
+          📝 Offset
+               Sintaxis: 
+               offset-tamaño-numero
+
+               tamaño --> Opcional
+               numero --> número de columnas 
+          
+          📝 Margin
+               Sintaxis:
+               dirección-tamaño-auto
+
+
+               dirección: dirección del Margin
+                         ms --> Margin left
+                         me --> Margin right
+               
+               tamaño: Opcional
+                         
+                              Menos de 576px
+                         sm   Más de 576px y menos de 768px
+                         md   Más de 768px y menos de 992px
+                         lg   Más de 992px y menos de 1200px
+                         xl   Más de 1200px y menos de 1400px
+                         xxl  Más de 1400px
+
+               auto: palabra clave. 
+               
+     📒 Re-ordenamiento.
+          📝 Sintaxis: 
+               order-tamaño-numero 
+
+               tamaño : Opcional
+               numero: de 1 a 5. 
+
+               order-first --> Pone la columna hasta el inicio --> order: -1; -1 < 0
+               order-last --> Poner a la columna hata el final --> order: 6
+     
+     📒 Anidación

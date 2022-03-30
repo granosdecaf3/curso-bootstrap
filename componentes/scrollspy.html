@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scrollspy</title>
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <style>
+      .navbar-brand__img {
+        width: 55px;
+      }
+      .bg-pink {
+        background-color: plum;
+      }
+      .nav-scrollspy .active {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body
+    class="position-relative"
+    data-spy="scroll"
+    data-target="#navabar-scrollspy"
+  >
+    <nav
+      class="sticky-top navbar navbar-expand-lg navbar-dark bg-pink nav-scrollspy"
+      id="navabar-scrollspy"
+    >
+      <a href="#" class="navbar-brand">
+        <img src="./img/logo.svg" alt="" class="navbar-brand__img" />
+      </a>
+      <button
+        class="navbar-toggler"
+        data-toggle="collapse"
+        data-target="#contenido-nav"
+        aria-controls="contenido-nav"
+        aria-expanded="false"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="contenido-nav">
+        <ul class="navbar-nav navbar-example ml-auto text-white">
+          <li class="nav-item">
+            <a href="#home" class="nav-link text-reset">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about-me" class="nav-link text-reset">About me</a>
+          </li>
+          <li class="nav-item">
+            <a href="#service" class="nav-link text-reset">Service</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link text-reset">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main class="container-fluid">
+      <!-- Home -->
+      <section class="jumbotron text-center bg-white" id="home">
+        <h1>¡Welcome, welcome!</h1>
+        <p class="lead">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus
+          excepturi consectetur perferendis iure dolorem nesciunt odit et aut
+          ullam commodi veniam vero laborum aliquid voluptates, illo, quia
+          aspernatur! Quia, est?
+        </p>
+        <img src="./img/video-call.svg" alt="" class="w-50" />
+      </section>
+      <!-- About me -->
+      <div class="row text-center bg-light vh-100" id="about-me">
+        <h2 class="col-12 pt-5 mt-5">About me</h2>
+      </div>
+      <!-- Service -->
+      <div class="row text-center vh-100" id="service">
+        <h2 class="col-12 pt-5 mt-5">Service</h2>
+      </div>
+      <!-- Contact -->
+      <div class="row text-center bg-light vh-100" id="contact">
+        <h2 class="col-12 pt-5 mt-5">Contact</h2>
+      </div>
+    </main>
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  </body>
+</html>

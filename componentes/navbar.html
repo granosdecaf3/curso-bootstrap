@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <style>
+      .navbar-brand__img {
+        width: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark justify-content-between">
+        <!-- Brand -->
+        <a href="#" class="navbar-brand">
+          <img
+            src="./img/logo.svg"
+            alt="We share"
+            loading="lazy"
+            class="navbar-brand__img"
+          />
+          Marca
+        </a>
+        <!-- Button collapse -->
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#contenido-nav"
+          aria-controls="contenido-nav"
+          aria-expanded="false"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Nav content -->
+        <div class="collapse navbar-collapse flex-grow-0" id="contenido-nav">
+          <ul class="navbar-nav">
+            <!-- Home -->
+            <li class="nav-item active">
+              <a href="#" class="nav-link">
+                Home
+              </a>
+            </li>
+            <!-- About me -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                About me
+              </a>
+            </li>
+            <!-- Services -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                Services
+              </a>
+            </li>
+            <!-- Contact -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-danger justify-content-between"
+    >
+      <div class="container">
+        <!-- Brand -->
+        <a href="#" class="navbar-brand">
+          <img
+            src="./img/logo.svg"
+            alt="We share"
+            loading="lazy"
+            class="navbar-brand__img"
+          />
+          Marca
+        </a>
+        <!-- Button collapse -->
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#contenido-nav"
+          aria-controls="contenido-nav"
+          aria-expanded="false"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Nav content -->
+        <div class="collapse navbar-collapse flex-grow-0" id="contenido-nav">
+          <ul class="navbar-nav">
+            <!-- Home -->
+            <li class="nav-item active">
+              <a href="#" class="nav-link">
+                Home
+              </a>
+            </li>
+            <!-- About me -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                About me
+              </a>
+            </li>
+            <!-- Services -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                Services
+              </a>
+            </li>
+            <!-- Contact -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- JQuery -->
+    <script src="./js/jquery-3.5.0.min.js"></script>
+    <!-- Popper.js -->
+    <script src="./js/popper.min.js"></script>
+    <!-- JS Bootstrap -->
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>

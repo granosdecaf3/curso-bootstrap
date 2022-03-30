@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alertas</title>
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row row-cols-1">
+        <h1 class="text-center">Alertas</h1>
+        <hr />
+
+        <h2>Cerrar alertas</h2>
+        <div class="alert alert-warning alert-dismissible fade show">
+          Timpo de espera agotado.
+          <button class="close" data-dismiss="alert" aria-label="Close">
+            <span>&times;</span>
+          </button>
+        </div>
+
+        <h2>Relleno</h2>
+        <p class="alert alert-success">
+          Relleno de alerta <a href="#" class="alert-link">Soy un enlace</a>
+        </p>
+        <hr />
+
+        <h2>Contenido adicional</h2>
+        <div class="alert alert-danger">
+          <h2 class="alert-heading">Opss a ocurrido un error</h2>
+          <p>
+            Accede a este <a href="#" class="alert-link">link</a> para tener mas
+            información.
+          </p>
+        </div>
+        <hr />
+      </div>
+    </div>
+    <!-- Jquery -->
+    <script src="./js/jquery-3.5.0.min.js"></script>
+    <!-- Popper -->
+    <script src="./js/popper.min.js"></script>
+    <!-- JS Bootstrap -->
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>

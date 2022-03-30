@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collapse</title>
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  </head>
+  <body>
+    <h1 class="text-center">Collapse</h1>
+    <hr />
+    <!-- <h2>Crear</h2> -->
+    <!-- Botón -->
+    <!-- <a
+      class="btn btn-success"
+      href="#contenido-1"
+      data-toggle="collapse"
+      aria-expanded="false"
+      aria-controls="contenido-1"
+    >
+      Collapse ancla
+    </a>
+    <button
+      class="btn btn-success"
+      data-toggle="collapse"
+      aria-expanded="false"
+      aria-controls="contenido-1"
+      data-target="#contenido-1"
+    >
+      Collapse botón
+    </button> -->
+    <!-- Contenido -->
+    <!-- <div class="collapse" id="contenido-1">
+      <div class="card card-body">
+        Contenido a mostrar
+      </div>
+    </div>
+    <hr /> -->
+
+    <h2>Acordeón</h2>
+    <div class="accordion" id="acordeon-01">
+      <!-- Primer elemento hijo -->
+      <div class="card">
+        <!-- boton -->
+        <div class="card-header" id="boton-collapse-1">
+          <button
+            class="btn btn-block text-left"
+            data-toggle="collapse"
+            data-target="#contenido-btn-1"
+            aria-expanded="true"
+            aria-controls="contenido-btn-1"
+          >
+            Título botón 1
+          </button>
+        </div>
+        <!-- Contenedor -->
+        <div
+          class="collapse show"
+          id="contenido-btn-1"
+          aria-labelledby="boton-collapse-1"
+          data-parent="#acordeon-01"
+        >
+          <div class="card-body">
+            Contenido el botón 1 Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Quas porro labore asperiores incidunt quos
+            perferendis facere a sequi quae maxime nihil doloribus amet possimus
+            neque optio corrupti, laudantium tenetur corporis.
+          </div>
+        </div>
+      </div>
+      <!-- Segundo elemento hijo -->
+      <div class="card">
+        <!-- boton -->
+        <div class="card-header" id="boton-collapse-3">
+          <button
+            class="btn btn-block text-left collapsed"
+            data-toggle="collapse"
+            data-target="#contenido-btn-3"
+            aria-expanded="false"
+            aria-controls="contenido-btn-3"
+          >
+            Título botón 1
+          </button>
+        </div>
+        <!-- Contenedor -->
+        <div
+          class="collapse"
+          id="contenido-btn-3"
+          aria-labelledby="boton-collapse-3"
+          data-parent="#acordeon-01"
+        >
+          <div class="card-body">
+            Contenido del botón 3 Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Quas porro labore asperiores incidunt quos
+            perferendis facere a sequi quae maxime nihil doloribus amet possimus
+            neque optio corrupti, laudantium tenetur corporis.
+          </div>
+        </div>
+      </div>
+      <!-- Segundo elemento hijo -->
+      <div class="card">
+        <!-- boton -->
+        <div class="card-header" id="boton-collapse-2">
+          <button
+            class="btn btn-block text-left collapsed"
+            data-toggle="collapse"
+            data-target="#contenido-btn-2"
+            aria-expanded="false"
+            aria-controls="contenido-btn-2"
+          >
+            Título botón 1
+          </button>
+        </div>
+        <!-- Contenedor -->
+        <div
+          class="collapse"
+          id="contenido-btn-2"
+          aria-labelledby="boton-collapse-2"
+          data-parent="#acordeon-01"
+        >
+          <div class="card-body">
+            Contenido del botón 2 Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Quas porro labore asperiores incidunt quos
+            perferendis facere a sequi quae maxime nihil doloribus amet possimus
+            neque optio corrupti, laudantium tenetur corporis.
+          </div>
+        </div>
+      </div>
+    </div>
+    <h3>Acordeón dos</h3>
+    <div class="accordion" id="acordeon-02">
+      <!-- Primer elemento hijo -->
+      <div class="card">
+        <!-- boton -->
+        <div class="card-header" id="boton-collapse2-1">
+          <button
+            class="btn btn-block text-left"
+            data-toggle="collapse"
+            data-target="#contenido-btn-4"
+            aria-expanded="true"
+            aria-controls="contenido-btn-4"
+          >
+            Título botón 1
+          </button>
+        </div>
+        <!-- Contenedor -->
+        <div
+          class="collapse show"
+          id="contenido-btn-4"
+          aria-labelledby="boton-collapse2-1"
+          data-parent="#acordeon-02"
+        >
+          <div class="card-body">
+            Contenido el botón 1 Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Quas porro labore asperiores incidunt quos
+            perferendis facere a sequi quae maxime nihil doloribus amet possimus
+            neque optio corrupti, laudantium tenetur corporis.
+          </div>
+        </div>
+      </div>
+      <!-- Segundo elemento hijo -->
+      <div class="card">
+        <!-- boton -->
+        <div class="card-header" id="boton-collapse2-2">
+          <button
+            class="btn btn-block text-left collapsed"
+            data-toggle="collapse"
+            data-target="#contenido-btn-5"
+            aria-expanded="false"
+            aria-controls="contenido-btn-5"
+          >
+            Título botón 1
+          </button>
+        </div>
+        <!-- Contenedor -->
+        <div
+          class="collapse"
+          id="contenido-btn-5"
+          aria-labelledby="boton-collapse2-2"
+          data-parent="#acordeon-02"
+        >
+          <div class="card-body">
+            Contenido del botón 3 Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Quas porro labore asperiores incidunt quos
+            perferendis facere a sequi quae maxime nihil doloribus amet possimus
+            neque optio corrupti, laudantium tenetur corporis.
+          </div>
+        </div>
+      </div>
+      <!-- tercer elemento hijo -->
+      <div class="card">
+        <!-- boton -->
+        <div class="card-header" id="boton-collapse2-3">
+          <button
+            class="btn btn-block text-left collapsed"
+            data-toggle="collapse"
+            data-target="#contenido-btn-6"
+            aria-expanded="false"
+            aria-controls="contenido-btn-6"
+          >
+            Título botón 1
+          </button>
+        </div>
+        <!-- Contenedor -->
+        <div
+          class="collapse"
+          id="contenido-btn-6"
+          aria-labelledby="boton-collapse2-3"
+          data-parent="#acordeon-02"
+        >
+          <div class="card-body">
+            Contenido del botón 3 Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Quas porro labore asperiores incidunt quos
+            perferendis facere a sequi quae maxime nihil doloribus amet possimus
+            neque optio corrupti, laudantium tenetur corporis.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Jquery -->
+    <script src="./js/jquery-3.5.0.min.js"></script>
+    <!-- Popper -->
+    <script src="./js/popper.min.js"></script>
+    <!-- JS Bootstrap -->
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grupo de listas</title>
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row row-cols-1">
+        <!-- <h1 class="text-center">Grupo de listas</h1>
+        <hr />
+        <h2>Crear</h2>
+        <h3>Primera forma</h3>
+        <ul class="list-group">
+          <li class="active list-group-item">Elemento de lista 1</li>
+          <li class="list-group-item">Elemento de lista 2</li>
+          <li aria-disabled="true" class="disabled list-group-item">
+            Elemento de lista 3
+          </li>
+        </ul>
+
+        <h3>Segunda forma</h3>
+        <div class="list-group">
+          <a href="#" class="active list-group-item list-group-item-action"
+            >Lista con ancla</a
+          >
+          <a href="#" class="list-group-item list-group-item-action"
+            >Lista con ancla</a
+          >
+          <a
+            aria-disabled="true"
+            href="#"
+            class="disabled list-group-item list-group-item-action"
+            >Lista con ancla</a
+          >
+        </div>
+        <hr /> -->
+
+        <!-- <h2>Eliminar bordes</h2>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Elemento de lista 1</li>
+          <li class="list-group-item">Elemento de lista 2</li>
+          <li class="list-group-item">
+            Elemento de lista 3
+          </li>
+        </ul>
+        <div class="list-group list-group-flush">
+          <a href="#" class="list-group-item list-group-item-action"
+            >Lista con ancla</a
+          >
+          <a href="#" class="list-group-item list-group-item-action"
+            >Lista con ancla</a
+          >
+          <a href="#" class="list-group-item list-group-item-action"
+            >Lista con ancla</a
+          >
+        </div>
+        <hr /> -->
+
+        <!-- <h2>Orientacion horizontal</h2>
+        <ul class="list-group list-group-horizontal">
+          <li class="list-group-item">Elemento de lista 1</li>
+          <li class="list-group-item">Elemento de lista 2</li>
+          <li class="list-group-item">
+            Elemento de lista 3
+          </li>
+        </ul>
+        <div class="list-group list-group-horizontal">
+          <a href="#" class="list-group-item list-group-item-action"
+            >Lista con ancla</a
+          >
+          <a href="#" class="list-group-item list-group-item-action"
+            >Lista con ancla</a
+          >
+          <a href="#" class="list-group-item list-group-item-action"
+            >Lista con ancla</a
+          >
+        </div>
+        <hr /> -->
+
+        <!-- <h2>Colores de fondo</h2>
+        <ul class="list-group">
+          <li class="list-group-item bg-primary text-white">
+            Elemento de lista 1
+          </li>
+          <li class="list-group-item list-group-item-secondary">
+            Elemento de lista 2
+          </li>
+          <li class="list-group-item list-group-item-success">
+            Elemento de lista 3
+          </li>
+        </ul>
+        <div class="list-group list-group-horizontal">
+          <a
+            href="#"
+            class="list-group-item-danger list-group-item list-group-item-action"
+          >
+            Lista con ancla
+          </a>
+          <a
+            href="#"
+            class="list-group-item-warning list-group-item list-group-item-action"
+          >
+            Lista con ancla
+          </a>
+          <a
+            href="#"
+            class="list-group-item-info list-group-item list-group-item-action"
+          >
+            Lista con ancla
+          </a>
+        </div>
+        <hr /> -->
+
+        <!-- <h2>Contenido personalizado</h2>
+        <h3>Badges</h3>
+        <ul class="list-group">
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            Notificaciones
+            <span class="badge badge-primary badge-pill">15</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            Mensajes
+            <span class="badge badge-primary badge-pill">4</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            Grupos
+            <span class="badge badge-primary badge-pill">9</span>
+          </li>
+        </ul>
+        <h3>Flexbox</h3>
+        <div class="list-group">
+          <a
+            href="#"
+            class="active list-group-item list-group-item-action text-white"
+          >
+            <div class="d-flex justify-content-between">
+              <strong>Farrah Tam</strong>
+              <span class="">Ayer ></span>
+            </div>
+            <span>Lorem, ipsum.</span>
+            <br />
+            <span class=""
+              >Here Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Error, illum. Magnam explicabo, tenetur fugiat doloribus a ullam
+              perspiciatis.</span
+            >
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex justify-content-between">
+              <strong>Adam Gooseff </strong>
+              <span class="text-muted">Ayer ></span>
+            </div>
+            <span>Lorem, ipsum.</span>
+            <br />
+            <span class="text-muted"
+              >I've Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Expedita, asperiores autem! Sequi eveniet ipsam illum impedit
+              exercitationem id?</span
+            >
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex justify-content-between">
+              <strong>Chella Bohem </strong>
+              <span class="text-muted">Viernes ></span>
+            </div>
+            <span>Lorem, ipsum.</span>
+            <br />
+            <span class="text-muted"
+              >Everything Lorem ipsum dolor sit, amet consectetur adipisicing
+              elit. Amet provident quia enim eaque? Tenetur officia consectetur
+              id provident.</span
+            >
+          </a>
+        </div>
+        <hr /> -->
+
+        <h2>Complementos JavaScript</h2>
+        <!-- Grupo de listas -->
+        <div class="list-group col-4" id="grupo-lista" role="tablist">
+          <a
+            data-toggle="list"
+            role="tab"
+            aria-controls="elemento1"
+            id="elemento1"
+            href="#contenido1"
+            class="list-group-item list-group-item-action active"
+          >
+            Grupo de lista
+          </a>
+          <a
+            data-toggle="list"
+            role="tab"
+            aria-controls="elemento2"
+            id="elemento2"
+            href="#contenido2"
+            class="list-group-item list-group-item-action"
+          >
+            Grupo de lista
+          </a>
+          <a
+            data-toggle="list"
+            role="tab"
+            aria-controls="elemento3"
+            id="elemento3"
+            href="#contenido3"
+            class="list-group-item list-group-item-action"
+          >
+            Grupo de lista
+          </a>
+        </div>
+        <!-- Contenido de listas -->
+        <div class="tab-content col-8" id="contenidoLista">
+          <div
+            class="tab-pane fade active show"
+            role="tabpanel"
+            id="contenido1"
+            aria-labelledby="elemento1"
+          >
+            Contenido 1 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Deserunt fugit nisi eaque explicabo veniam assumenda eum! Ratione
+            repudiandae sit alias!
+          </div>
+          <div
+            class="tab-pane fade"
+            role="tabpanel"
+            id="contenido2"
+            aria-labelledby="elemento2"
+          >
+            Contenido 2 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Deserunt fugit nisi eaque explicabo veniam assumenda eum! Ratione
+            repudiandae sit alias!
+          </div>
+          <div
+            class="tab-pane fade"
+            role="tabpanel"
+            id="contenido3"
+            aria-labelledby="elemento3"
+          >
+            Contenido 3 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Deserunt fugit nisi eaque explicabo veniam assumenda eum! Ratione
+            repudiandae sit alias!
+          </div>
+        </div>
+        <hr />
+      </div>
+    </div>
+
+    <!-- Jquery -->
+    <script src="./js/jquery-3.5.0.min.js"></script>
+    <!-- Popper -->
+    <script src="./js/popper.min.js"></script>
+    <!-- JS Bootstrap -->
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>

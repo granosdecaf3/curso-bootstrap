@@ -1,0 +1,138 @@
+Utilidades de Bootstrap parte 2
+-------------------------------
+📒 Espaciado
+     📝 Espaciodos: 
+          Sintaxis:
+          🔸 espacioUBICACIÓN-tamaño
+          🔸 espacioUBICACIÓN-pantalla-tamaño
+
+          Espacio   --> m| p 
+
+          Ubicación --> t | b | l 
+                        r | x | y
+          
+          Tamaño    --> 0 | 1 = .5rem | 2 
+                        3 | 4 | 5  
+
+          Pantalla  --> sm | md | lg | xl
+     
+     📝 Centrado horizontal
+          🔸 mx-auto
+     
+     📝 Margenes negativos
+          Sintaxis:
+          🔸 mUBICACIÓN-nTAMAÑO
+          🔸 mUBICACIÓN-pantalla-nTAMAÑO
+
+          m         --> Margin
+
+          ubicación --> t | b | l 
+                        r | x | y
+
+          n         --> Negativo 
+
+          Tamaño    --> 0 | 1 | 2 
+                        3 | 4 | 5  
+          
+          Pantalla  --> sm | md | lg | xl
+                          
+📒 Desbordamiento
+     🔸 overflow-auto
+     🔸 overflow-hidden
+
+📒 Sombras
+     📝 Añadir
+         🔸shadow-sm --> Sombra pequeña
+         🔸shadow    --> Sombra regular
+         🔸shadow-lg --> Sombra grande
+
+     📝 Eliminar
+          🔸shadow-none --
+
+📒 Posicionamiento
+     Sintaxis:
+          position-tipo
+
+          Tipo --> static 
+                   relative
+                   absolute
+                   *fixed
+                   *sticky
+     
+     📝 Fixed
+          🔸fixed-top
+
+     📝 Sticky
+          🔸sticky-top
+
+📒 Tamaño
+     📝 Relativos al elemento padre
+     Sintaxis: 
+          lado-tamaño
+          
+          Lado      --> Horizontal (ancho) = w | mw
+                        Vertical (alto)   = h | mh
+          
+          Tamaño    --> 25 | 50 | 75 | 100 %
+     
+     📝 Relativos a la ventana
+     Sintaxis: 
+          lado-100
+          
+          Lado      --> Horizontal (ancho) = vw 
+                        Vertical (alto)   = wh
+          
+📒 Texto
+     📝 Alineación 
+      Sintaxis:
+          text-direccion
+          text-pantalla-direccion
+
+          Dirección --> left | center | right | justify
+          
+          Pantalla  --> sm | md | lg | xl  
+
+     📝 Transformaciones
+      Sintaxis: 
+          text-transformación
+
+          Transformación --> lowercase = minúscula
+                             uppercase = mayúscula
+                             capitalize  = capital
+
+     📝 Peso de fuente 
+      Sintaxis: 
+          font-weight-peso
+
+          Peso --> bold | bolder | normal 
+                   light| lighter| 
+     
+     📝 Cursivas
+          🔸 font-italic   
+
+     📝 Reestablecer color
+          🔸 text-reset
+     
+     📝 Decoración de texto
+          🔸 text-decoration-none
+
+     📝 Ajuste y desbordamiento de texto
+          🔸 text-wrap
+               🔸 badge
+          🔸 text-truncate
+               🔸 d-block
+               🔸 d-inline-block
+
+📒 Visibilidad
+     🔸 visible
+     🔸 inivisible
+     
+📒 Alineacion de elementos. 
+     Sintaxis: 
+          align-dirección 
+
+          Dirección --> baseline | top     |middle
+                        bottom   |text-top | text-bottom
+
+
+

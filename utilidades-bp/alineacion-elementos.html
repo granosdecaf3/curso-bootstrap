@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alineación de elementos</title>
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <style>
+      span {
+        background-color: lightblue;
+        font-size: 12px;
+      }
+      p {
+        background-color: #dad9d9;
+        text-decoration: underline #2e2e2e;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row row-cols-1">
+        <h1>Alineación de elementos</h1>
+        <hr />
+        <h2>Elementos inline</h2>
+        <p>Alineacion <span class="align-baseline">baseline</span></p>
+        <p>Alineacion <span class="align-top">top</span></p>
+        <p>Alineacion <span class="align-middle">middle</span></p>
+        <p>Alineacion <span class="align-bottom">bottom</span></p>
+        <p>Alineacion <span class="align-text-top">text-top</span></p>
+        <p>Alineacion <span class="align-text-bottom">text-bottom</span></p>
+      </div>
+      <div class="row row-cols-1">
+        <h2>Celdas</h2>
+        <!-- Tabla -->
+        <table border class="mb-5" style="height: 100px;">
+          <tbody>
+            <tr>
+              <td class="align-baseline">Baseline</td>
+              <td class="align-top">Top</td>
+              <td class="align-middle">Middle</td>
+              <td class="align-bottom">Bottom</td>
+              <td class="align-text-top">Text top</td>
+              <td class="align-text-bottom">text bottom</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Jquery -->
+    <script src="./js/jquery-3.5.0.min.js"></script>
+    <!-- Popper -->
+    <script src="./js/popper.min.js"></script>
+    <!-- JS Bootstrap -->
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>

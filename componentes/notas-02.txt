@@ -1,0 +1,398 @@
+COMPONENTES DE BOOTSTRAP PARTE #2
+----------------------------------
+📒 Grupos de lista
+   🗒 Crear
+      -> 🔖 <ul> & <li>
+         🔸 list-group
+         🔸 list-group-item
+      
+      -> 🔖 <div> & <a>
+         🔸 list-group
+         🔸 list-group-item
+         🔸 list-group-item-action
+   
+   🗒 Estados
+      -> Activo
+         🔸 active
+      
+      -> Desactivo
+         🔸 disabled
+         📌 aria-disabled = "true"
+      
+   🗒 Eliminar bordes.
+      🔸 list-group-flush
+   
+   🗒 Orientación horizontal. 
+      🔸 list-group-horizontal
+   
+   🗒 Colores de fondo
+      🔸 list-group-item-primary
+                        -secondary
+                        -success
+                        -danger
+                        -warning
+                        -info
+                        -light
+                        -dark
+
+   🗒 Contenido personalizado
+      📒 Badges. 
+      📒 Clases flexbox. 
+      🔸 active
+   
+   🗒 Complementos JavaScript
+      Para el grupo de lista:
+         -> Elemento padre
+            🔸 list-group
+            📌 id=""
+            📌 role="tablist"
+         
+         -> Elemento hijo
+            🔸 list-group-item
+            🔸 list-group-item-action
+            🔸 active
+            📌 id=""
+            📌 data-toggle="list"
+            📌 href= "#id-contenido"
+            📌 role="tab"
+            📌 aria-controls="nombre-del-list-item"
+      
+      Para el grupo de contenido:
+         -> Elemento padre
+            🔸 tab-content
+            📌 id = ""
+         
+         -> Elemento hijo
+            🔸 tab-pane
+            🔸 fade
+            🔸 active
+               🔸 show
+            📌 id = ""
+            📌 role = "tabpanel"
+            📌 aria-labelledby="id-del-list-item"
+
+📒 Paginación. 
+   🗒 Crear          
+      🔸 pagination  <ul>
+      🔸 page-item   <li>
+      🔸 page-link   <a>
+   
+   🗒 Iconos.
+      🔖 <span>
+         📌 aria-hidden="true"
+         🖼 &laquo;  -> <<
+         🖼 &raquo;  -> >>
+   
+   🗒 Tamaños. 
+      🔸 pagination-lg
+      🔸 pagination-sm
+   
+   🗒 Alineación horizontal.
+      🔸 justify-content-start
+                        -center
+                        -end
+   
+   🗒 Estados
+      -> Activo
+         🔖<li>
+            🔸 active
+      -> Desactivo
+         🔖<li>
+            🔸 disabled
+            🔖 <a>
+               aria-disabled="true"
+
+📒 Tarjetas. 
+   🗒 Crear
+      -> Elemento padre
+         🔸 card
+      
+      -> Elementos hijo
+         🔸 card-header
+            🔸 card-title
+            🔸 card-subtitle
+            🔸 card-text
+            🔸 card-link
+
+         🔸 card-body
+            🔸 card-title
+            🔸 card-subtitle
+            🔸 card-text
+            🔸 card-link
+
+         🔸 card-footer
+            🔸 card-title
+            🔸 card-subtitle
+            🔸 card-text
+            🔸 card-link 
+   
+   🗒 Tamaños
+      📒 Uso de columnas
+      .container
+         .row
+         🔸 col-unNumero
+         🔸 col-pantalla-unNumero
+
+      📒 Clases utilidades 
+         🔸 w-25 | w-50 | w-75 | w-100 
+      
+      📘 CSS Personalizado
+         width: 100px; 
+   
+   🗒 Alineación de textos.
+      📒 Clases utilidades 
+         🔸 text-left   | text-right 
+            text-center | text-justify  
+   
+   🗒 Imagen      
+      -> Arriba o abajo
+         🔸 card-img-top
+
+      -> Como fondo
+         🔸 card-img -> <img>
+
+         🔸 card-img-overlay -> <div>
+      
+      -> Izquierda o derecha
+         📒 Grid de bootstrap 
+            🔸row
+            🔸 col
+
+   🗒 Colores de fondo. 
+      📒 Utilidades, colores de fondo
+        🔸 bg-primary
+            ... 
+   
+   🗒 Colores de borde
+      📒 Utilidades, colores de borde
+        🔸 border-primary
+                    ... 
+   
+   🗒 Grupos de tarjetas.
+      -> 1ª forma 
+         🔸 card-group
+      -> 2ª forma
+         🔸 card-deck
+   
+   🗒 Tamaño automático
+      🔸 card-columns
+
+📒 Collapse
+   🗒 Crear
+      1º Botón
+         🔖 <a>
+            📌 data-toggle="collapse"
+            📌 href="#idContenido"
+            📌 aria-expanded="false"
+            📌 aria-controls="idContenido"
+
+         🔖 <button>
+            📌 data-toggle="collapse"
+            📌 data-target="#idContenido"
+            📌 aria-expanded="false"
+            📌 aria-controls="idContenido"
+      
+      2º Contenido
+         🔸 collapse
+            🔸 card 
+            🔸 card-body
+
+         📌 id=""
+   
+   🗒 Acordeón. 
+      ->Elemento padre
+         🔸 accordion
+         📌 id=""
+      
+      ->Elemento hijo del acordeón. 
+         🔸 card
+            
+         ->Elemento hijo
+            1º Botón
+               🔸card-header
+               📌 id=""
+
+                  🔖 <button>
+                     🔸 btn
+                     🔸 btn-block
+                     🔸 collapsed 
+                        Aplica si el botón tiene el atributo aria-expanded="false" y su contenido a mostrar no tiene la clase show.
+
+                     📌 data-toggle="collapse"
+                     📌 data-target="#idContenido"
+                     📌 aria-expanded="true | false"
+                     📌 aria-controls="idContenido"
+                     ✍🏽 Título del botón
+            
+            2º Contenido
+               🔸 collapse
+               🔸 show 
+                  Aplica solo a un elemento.
+
+               📌 id=""
+               📌 data-parent="#idAcordeón"
+               📌 aria-labelledby="idCardHeader"
+               
+                  ->Hijo
+                  🔸card-body
+   
+📒 Formularios. 
+   🗒 Unir label con un elemento
+      🔸 form-group
+   
+   🗒 Unir label con checkbox o radio
+      🔸 form-check
+
+      ->En línea
+         🔸 form-check-inline
+
+   🗒 Estilos
+      🔖 <input>, <textarea>, <select>
+         🔸 form-control
+
+         -> Tamaños 
+            🔸 form-control-lg
+            🔸 form-control-sm
+
+      🔖 Input Range
+         🔸 form-control-range
+
+      🔖 Input radio o check
+         -> Normal
+         🔸 form-check-input
+      
+      🔖 Label de radio o check
+         🔸 form-check-label
+   
+   🗒 Estilos personalizados.
+      -> Unir label con checkbox o radio
+         🔸 custom-control
+         🔸 custom-checkbox
+                  -radio
+         
+         🔸 custom-control-inline
+            Elementos en línea
+
+         -> Input checkbox & radio
+            🔸 custom-control-input
+            🔸 custom-control-label
+
+      -> Interruptores. 
+         🔸 custom-control
+         🔸 custom-switch
+
+         -> Input checkbox
+            🔸 custom-control-input
+            🔸 custom-control-label
+      
+      -> <select>
+         🔸 custom-select
+         
+         Tamaños
+         🔸 custom-select-sm
+         🔸 custom-select-lg
+
+   🗒 Formularios en línea.
+      🔸 form-inline
+   
+   🗒 Grid en formularios. 
+      🔸 row
+      🔸 col-unNumero
+      🔸 col-auto
+
+      -> Alinear label
+         🔸 col-form-label
+      
+      -> Tamaño de label
+         🔸 col-form-label-sm
+         🔸 col-form-label-lg
+   
+   🗒 Textos de ayuda. 
+      🔸 form-text
+
+   🗒 Formulario desactivado. 
+      -> Forma individual
+         📌 disabled
+
+      -> Forma grupal
+         🔖 <fieldset>
+            📌 disabled
+   
+📒 Dropdown
+   🗒 Crear 
+      -> Elemento padre
+         🔸 dropdown
+
+      -> Hijos
+         1º Botón <button> o <a>
+            🔸 dropdown-toggle
+            📌 data-toggle="dropdown"
+            📌 aria-haspopup="true"
+            📌 aria-expanded="false"
+            📌 id=""
+
+         2º Contenido del botón
+            🔸 dropdown-menu
+            📌 aria-labelledby="id-botón"
+
+            -> Hijo
+               🔖 <a>
+                  🔸 dropdown-item
+
+               🔖 Etiqueta de encabezado. 
+                  🔸 dropdown-header
+               
+               🔖 Etiqueta de texto
+                  🔸 dropdown-item-text
+
+               🔖 <p> 
+                  📒 Clases de utlidad para texto
+               
+               🔖 Divisor
+                  🔸 dropdown-divider
+
+               🔖 <form>
+                  📒 Clases de formulario
+
+   🗒 Tamaños
+      🔸 btn-lg
+      🔸 btn-sm
+   
+   🗒 Ubicación del contenido. 
+      -> Arriba
+         🔸 dropup
+
+      -> Derecha
+         🔸 dropright
+
+      -> Izquierda
+         🔸 dropleft
+      
+   🗒 Estados
+      -> Activo 
+         🔸 active
+
+      -> Desactivo
+         🔸 disabled || 📌 disabled 📌 aria-disabled="true"
+
+📒 Grupos de input
+   🗒 Crear
+      -> Padre
+         🔸 input-group
+
+      -> Hijos: 
+         Lectura o botón 
+         🔸input-group-text
+            Ubicación antes   
+               🔸 input-group-prepend 
+            Ubicación después 
+               🔸 input-group-append
+
+         Campo de entrada
+            🔖 <input>
+               🔸 form-control
+
+   🗒 Tamaños. 
+      🔸 input-group-sm
+      🔸 input-group
+      🔸 input-group-lg

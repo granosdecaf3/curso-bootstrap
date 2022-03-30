@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Espaciados</title>
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <style>
+      .caja {
+        --tamano: 150px;
+        height: var(--tamano);
+        width: var(--tamano);
+        border: 10px ridge yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="caja bg-info my-n5">Margen negativo</div>
+    <div class="container">
+      <div class="row">
+        <div class="caja bg-primary mb-2 p-3">Caja 1</div>
+        <div class="w-100"></div>
+
+        <!-- <div class="caja bg-success ml-5 p-3">Caja 2</div>
+        <div class="w-100"></div>
+        <div class="caja bg-danger mt-2 mx-auto">Caja 3</div> -->
+      </div>
+    </div>
+
+    <!-- Jquery -->
+    <script src="./js/jquery-3.5.0.min.js"></script>
+    <!-- Popper -->
+    <script src="./js/popper.min.js"></script>
+    <!-- JS Bootstrap -->
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario Desactivado</title>
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <!-- Name -->
+        <div class="form-group">
+          <label for="userName">Nombre</label>
+          <input type="text" class="form-control" id="userName" disabled />
+        </div>
+        <!-- Last Name -->
+        <div class="form-group">
+          <label for="userLastName">Apellidos</label>
+          <input type="text" class="form-control" id="userLastName" />
+        </div>
+        <!-- Email -->
+        <div class="form-group">
+          <label for="userEmail">Correo electrónico</label>
+          <input type="email" class="form-control" id="userEmail" />
+        </div>
+        <fieldset disabled>
+          <!-- Password -->
+          <div class="form-group">
+            <label for="userPassword">Contraseña</label>
+            <input type="password" class="form-control" id="userPassword" />
+          </div>
+          <!-- Terms -->
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="userTerms" />
+            <label class="form-check-label" for="userTerms">
+              Acepto términos y condiciones
+            </label>
+          </div>
+        </fieldset>
+        <!-- Btn Subtmit -->
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+    <!-- JQuery-->
+    <script src="./js/jquery-3.5.0.min.js"></script>
+    <!-- Popper -->
+    <script src="./js/popper.min.js"></script>
+    <!-- JS Bootstrap -->
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tamaño</title>
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <style>
+      .contenedor {
+        --tamano: 300px;
+        width: var(--tamano);
+        height: var(--tamano);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tamaños</h1>
+    <h2>Width</h2>
+    <div class="bg-dark mb-4 contenedor">
+      <div class="bg-primary mb-2 w-25">caja 1</div>
+      <div class="bg-success mb-2 w-50">caja 2</div>
+      <div class="bg-warning mb-2 w-75">caja 3</div>
+      <div class="bg-danger mb-2 w-100">caja 4</div>
+      <div class="bg-info vw-100">caja 5</div>
+    </div>
+    <h2>Height</h2>
+    <div class="bg-dark mb-4 d-flex contenedor">
+      <div class="bg-primary mb-2 h-25">caja 1</div>
+      <div class="bg-success mb-2 h-50">caja 2</div>
+      <div class="bg-warning mb-2 h-75">caja 3</div>
+      <div class="bg-danger mb-2 h-100">caja 4</div>
+      <div class="bg-info vh-100">caja 5</div>
+    </div>
+
+    <!-- Jquery -->
+    <script src="./js/jquery-3.5.0.min.js"></script>
+    <!-- Popper -->
+    <script src="./js/popper.min.js"></script>
+    <!-- JS Bootstrap -->
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>

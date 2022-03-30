@@ -1,0 +1,109 @@
+CONTENIDO DE BOOTSTRAP
+______________________
+📒 Tipografía
+   🗒 Encabezados
+      h1
+      h2
+      ...
+      h6
+   
+   🗒 Elementos destacados
+      📌 Encabezados 
+            display-1
+                   -2
+                   -3
+                   -4
+
+      📌 Párrafos 
+            lead
+
+   🗒 Etiquetas de texto.
+      <mark>   <del>    <s>   <u>
+      <small>  <strong> <em>  <abbr>
+      <kbd>    <var>
+
+      📌 La etiqueta abbr
+         initialism
+      
+      📌 La etiqueta code
+         🛠 &lt; <
+            less than
+         🛠 &gt; >
+            greater than
+         
+         🔖 pre
+      
+   🗒 Etiqueta blockquote
+      📌 Destacar
+         blockquote
+      
+      📌 Añadir al autor
+         blockquote-footer
+      
+   🗒 Listas
+      📌 Eliminar margen y viñetas:
+         list-unstyled
+      
+      📌 Listas en línea:
+         list-inline
+         list-inline-item
+
+📒 Imágenes. 
+   🗒 Imagen responsiva
+      img-fluid
+   
+   🗒 Imagen con borde
+      img-thumbnail
+
+   🗒 Figure & figcaption
+      figure
+      figure-caption
+      figure-img
+
+📒 Tablas. 
+   🗒 Clase general
+      table
+   
+   🗒 Subtítulo
+
+   🗒 Colores
+      📌 Para <table>
+            table-dark
+
+      📌 Para <thead>
+            thead-dark
+            thead-light
+      
+      📌 Para todas las etiquetas
+         table-primary 
+               secondary
+               success
+               danger
+               warning
+               info
+               light
+               dark
+
+         bg-primary
+           -secondary
+           -success
+           ... 
+
+   🗒 Bordes
+      📌 Añadir
+         table-bordered
+
+      📌 Eliminar 
+         table-borderless
+   
+   🗒 Efecto hover
+      table-hover
+   
+   🗒 Tablas pequeñas. 
+      table-sm
+   
+   🗒 Tablas resposive
+      table-responsive
+   
+      📌 Tamaño receptivo
+         table-responisve-pantalla

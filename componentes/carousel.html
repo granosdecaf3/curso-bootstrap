@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel</title>
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <style>
+      .caption-center {
+        top: 0%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row row-cols-1">
+        <h1 class="text-center">Carousel</h1>
+        <hr />
+        <!-- Carousel -->
+        <div
+          class="carousel slide carousel-fade mb-5"
+          id="carousel-01"
+          data-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <!-- Diapisitiva #1 -->
+            <div class="carousel-item active">
+              <img
+                src="./img/scooter-01.jpg"
+                alt="Scooter Eléctrico"
+                class="d-block w-100"
+              />
+            </div>
+            <!-- Diapisitiva #2 -->
+            <div class="carousel-item">
+              <img
+                src="./img/scooter-02.jpg"
+                alt="Scooter Eléctrico"
+                class="d-block w-100"
+              />
+            </div>
+            <!-- Diapisitiva #3 -->
+            <div class="carousel-item">
+              <img
+                src="./img/scooter-03.jpg"
+                alt="Scooter Eléctrico"
+                class="d-block w-100"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Carousel #2 -->
+        <div
+          class="carousel slide carousel-fade mb-5"
+          id="carousel-02"
+          data-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <!-- Diapisitiva #1 -->
+            <div class="carousel-item active">
+              <img
+                src="./img/scooter-01.jpg"
+                alt="Scooter Eléctrico"
+                class="d-block w-100"
+              />
+            </div>
+            <!-- Diapisitiva #2 -->
+            <div class="carousel-item">
+              <img
+                src="./img/scooter-02.jpg"
+                alt="Scooter Eléctrico"
+                class="d-block w-100"
+              />
+            </div>
+            <!-- Diapisitiva #3 -->
+            <div class="carousel-item">
+              <img
+                src="./img/scooter-03.jpg"
+                alt="Scooter Eléctrico"
+                class="d-block w-100"
+              />
+            </div>
+          </div>
+          <!-- Controles -->
+          <a
+            href="#carousel-02"
+            class="carousel-control-prev"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a
+            href="#carousel-02"
+            class="carousel-control-next"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+          </a>
+        </div>
+        <!-- Carousel #3 -->
+        <div class="carousel slide mb-5" id="carousel-03" data-ride="carousel">
+          <!-- Indicadores -->
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carousel-03"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carousel-03" data-slide-to="1"></li>
+            <li data-target="#carousel-03" data-slide-to="2"></li>
+          </ol>
+          <!-- Diapositivas -->
+          <div class="carousel-inner">
+            <!-- Diapisitiva #1 -->
+            <div class="carousel-item active">
+              <img
+                src="./img/scooter-01.jpg"
+                alt="Scooter Eléctrico"
+                class="d-block w-100"
+              />
+            </div>
+            <!-- Diapisitiva #2 -->
+            <div class="carousel-item">
+              <img
+                src="./img/scooter-02.jpg"
+                alt="Scooter Eléctrico"
+                class="d-block w-100"
+              />
+            </div>
+            <!-- Diapisitiva #3 -->
+            <div class="carousel-item">
+              <img
+                src="./img/scooter-03.jpg"
+                alt="Scooter Eléctrico"
+                class="d-block w-100"
+              />
+            </div>
+          </div>
+          <!-- Controles -->
+          <a
+            href="#carousel-03"
+            class="carousel-control-prev"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a
+            href="#carousel-03"
+            class="carousel-control-next"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+          </a>
+        </div>
+        <!-- Carousel #4 -->
+        <div class="carousel slide mb-5" id="carousel-04" data-ride="carousel">
+          <!-- Indicadores -->
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carousel-04"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carousel-04" data-slide-to="1"></li>
+            <li data-target="#carousel-04" data-slide-to="2"></li>
+          </ol>
+          <!-- Diapositivas -->
+          <div class="carousel-inner">
+            <div class="carousel-caption text-right caption-center">
+              <h2 class="bg-dark">Titulo</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Accusantium, natus?
+              </p>
+            </div>
+            <!-- Diapisitiva #1 -->
+            <div class="carousel-item active">
+              <img
+                src="./img/scooter-01.jpg"
+                alt="Scooter Eléctrico"
+                class="d-block w-100"
+              />
+            </div>
+            <!-- Diapisitiva #2 -->
+            <div class="carousel-item">
+              <img
+                src="./img/scooter-02.jpg"
+                alt="Scooter Eléctrico"
+                class="d-block w-100"
+              />
+            </div>
+            <!-- Diapisitiva #3 -->
+            <div class="carousel-item">
+              <img
+                src="./img/scooter-03.jpg"
+                alt="Scooter Eléctrico"
+                class="d-block w-100"
+              />
+            </div>
+          </div>
+          <!-- Controles -->
+          <a
+            href="#carousel-04"
+            class="carousel-control-prev"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a
+            href="#carousel-04"
+            class="carousel-control-next"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Jquery -->
+    <script src="./js/jquery-3.5.0.min.js"></script>
+    <!-- Popper -->
+    <script src="./js/popper.min.js"></script>
+    <!-- JS Bootstrap -->
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>

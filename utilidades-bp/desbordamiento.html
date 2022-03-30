@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desbordamiento</title>
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <style>
+      .caja {
+        height: 180px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-3 bg-warning mr-3 overflow-auto caja">
+          <h2>Owerflow auto</h2>
+          <p class="text-danger">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
+            tempore? Voluptate voluptates provident, eveniet quisquam laborum
+            voluptatem aliquid nemo iusto et ipsa ullam animi labore, cum
+            ducimus dicta fuga sapiente?
+          </p>
+        </div>
+        <div class="col-3 bg-info overflow-hidden caja">
+          <h2>Overflow hidden</h2>
+          <p class="text-warning">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+            deserunt, aut non voluptatibus nihil enim cupiditate labore illo
+            laborum possimus? Debitis quia quasi ex quaerat assumenda sunt
+            consectetur nostrum deleniti.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Jquery -->
+    <script src="./js/jquery-3.5.0.min.js"></script>
+    <!-- Popper -->
+    <script src="./js/popper.min.js"></script>
+    <!-- JS Bootstrap -->
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>

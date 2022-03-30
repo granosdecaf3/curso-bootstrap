@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scrollspy</title>
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <style>
+      .navbar-brand__img {
+        width: 55px;
+      }
+      .bg-pink {
+        background-color: plum;
+      }
+      body {
+        /* margin-top: 50px; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row bg-secondary">
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+          fugit quo doloremque voluptas impedit ea tempora nihil assumenda
+          delectus, illo fugiat, blanditiis soluta dolores? Nisi sed numquam
+          facere placeat officia omnis expedita repellat necessitatibus iusto
+          quia deleniti commodi aut, illum error dicta non odio cum, magni
+          repudiandae porro quod consequatur harum rem ut! Atque, dolores.
+          Cumque, laborum. Accusamus, enim distinctio itaque quod sequi animi
+          aut saepe quia, nemo iure ipsum velit sit corrupti quis, quos officiis
+          architecto possimus dolorum nihil recusandae voluptate. Fugit illo
+          animi veritatis, quos consectetur voluptatibus eum voluptatem id
+          laboriosam, deleniti eos autem nisi tenetur sapiente. Recusandae?
+        </p>
+      </div>
+    </div>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-pink">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <img src="./img/logo.svg" alt="" class="navbar-brand__img" />
+        </a>
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#contenido-nav"
+          aria-controls="contenido-nav"
+          aria-expanded="false"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav navbar-example ml-auto text-white">
+            <li class="nav-item">
+              <a href="#" class="nav-link text-reset">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-reset">About me</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-reset">Service</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-reset">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container-fluid">
+      <!-- Home -->
+      <section class="jumbotron text-center bg-white">
+        <h1>Welcome, welcome!</h1>
+        <p class="lead">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus
+          excepturi consectetur perferendis iure dolorem nesciunt odit et aut
+          ullam commodi veniam vero laborum aliquid voluptates, illo, quia
+          aspernatur! Quia, est?
+        </p>
+        <img src="./img/video-call.svg" alt="" class="w-50" />
+      </section>
+      <!-- About me -->
+      <div class="row text-center bg-light vh-100">
+        <h2 class="col-12">About me</h2>
+      </div>
+      <!-- Service -->
+      <div class="row text-center vh-100">
+        <h2 class="col-12">Service</h2>
+      </div>
+      <!-- Contact -->
+      <div class="row text-center bg-light vh-100">
+        <h2 class="col-12">Contact</h2>
+      </div>
+    </main>
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  </body>
+</html>

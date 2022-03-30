@@ -1,0 +1,144 @@
+Utilidades de Bootstrap parte 1
+---------------------------
+📒 Colores
+     📝 Colores
+          🔸 primary --> azul
+          🔸 secondary --> gris
+          🔸 success --> verde
+          🔸 danger --> rojo
+          🔸 warning --> amarillo
+          🔸 info --> turquesa
+          🔸 light --> blanco gris
+          🔸 dark --> negro 80%
+          🔸 white --> blanco
+          🔸 transparent --> transparente
+          🔸 white-50 --> blanco 50% (No disponible en la versión 5)
+          🔸 black-50 --> negro 50% (No disponible en la versión 5)
+          🔸 muted --> Gris claro
+          🔸 body --> negro, blanco 
+     
+     📝 Colores de fondo
+          Sintaxis: 
+               🔸 bg-color
+                    color =   -primary
+                              -secondary
+                              -success 
+                              -danger
+                              -warning
+                              -info
+                              -light
+                              -dark
+                              -white
+                              -transparent
+                              -body
+
+               ✨News v5
+                    🔸 bg-gradient
+
+                    🔸 bg-opacity-valor
+                         valor = 10 | 25 | 50 | 75
+     
+     📝 Colores de texto
+          Sintaxis: 
+               text-color -> Textos normales 
+                   -primary
+                      ...
+               
+               link-{color} --> Textos que actuan como hipervínculos (<a>)
+                                Estilos en :hover y :focus
+
+               text-opacity-{valor} --> Agrega opacidad al color de texto que hayamos definido. 
+                    Valor: 25 | 50 | 75       
+
+📒 Bordes
+     📝 Añadir bordes:
+          🔸 border
+          🔸 border-lado
+                   -top
+                   -end
+                   -bottom
+                   -start
+     
+     📝 Eliminar bordes:
+          🔸 border-0
+          🔸 border-lado-0
+                   -top-
+                   -end-
+                   -bottom-
+                   -start-
+     
+     📝 Añdir colores de borde:
+          🔸 border-color
+                   -primary
+                   -secondary
+                   -success
+                   -danger
+                   -warning
+                   -info
+                   -light
+                   -dark
+                   -white
+          
+          border-{valor}
+           Valor: 1 | 2 | 3 | 4 | 5
+
+📒 Bordes redondeados. 
+     📝 Añadir bordes redondeados
+          🔸 rounded
+          🔸 rounded-circle
+          🔸 rounded-pill
+          🔸 rounded-lado
+                    -top
+                    -end
+                    -bottom
+                    -start
+     
+     📝 Eliminar bordes redondeados
+          🔸 rounded-0
+     
+     📝 Tamaños de bordes redondeados
+          🔸 rounded-tamaño 
+                    -1
+                    -2
+                    -3
+
+📒 Float
+     Sintaxis: 
+          🔸 float-direccion
+          
+          🔸 float-tamaño-direccion
+
+          dirección: left | right | none
+          tamaño: sm | md | lg | xl
+
+📒 Clear
+     clearfix
+
+📒 Display. 
+     Sintaxis: 
+          d-tipoDisplay
+          d-tamaño-tipoDisplay
+
+               Tamaños      --> sm 
+                 (Opcional)     md 
+                                lg
+                                xl 
+
+               Tipo display --> inline
+                                block
+                                none 
+
+📒 Embed. 
+     🔸 embed-responsive
+     🔸 embed-responsive-tamañoVideo
+                        -21by9 (21:9)
+                        -16by9 (16:9)
+                        -4by3 (4:3)
+                        -1by1 (1:1)
+
+     🔸 embed-responsive-item
+
+📒 Icono de cierre. 
+     🔸 close
+     🥣 aria-label
+     ❌ &times; 

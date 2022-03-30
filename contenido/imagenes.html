@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imágenes</title>
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <style>
+      body {
+        background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+        height: 100vh;
+        /* font-size: 30px; */
+      }
+      .flex-item {
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="d-flex justify-content-around align-items-center h-100">
+      <article class="mb-3 shadow-lg flex-item bg-primary">
+        <img src="./img/buzz.jpg" alt="Buzz LightYear" class="img-fluid" />
+      </article>
+      <article class="mb-3 shadow-lg flex-item">
+        <img
+          src="./img/buzz.jpg"
+          alt="Buzz LightYear"
+          class="img-fluid img-thumbnail"
+        />
+      </article>
+      <article class="mb-3 flex-item">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
+          aspernatur!
+        </p>
+        <figure class="">
+          <img
+            src="./img/buzz.jpg"
+            alt="Buzz LightYear"
+            class="img-fluid figure-img"
+          />
+          <figcaption class="figure-caption">
+            <cite>Nombre autor</cite>
+          </figcaption>
+        </figure>
+      </article>
+    </div>
+
+    <!-- Jquery -->
+    <script src="./js/jquery-3.5.0.min.js"></script>
+    <!-- Popper -->
+    <script src="./js/popper.min.js"></script>
+    <!-- JS Bootstrap -->
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>

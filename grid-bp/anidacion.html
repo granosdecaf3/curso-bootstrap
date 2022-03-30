@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animadacion</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <style>
+      .fila {
+        border: 3px solid blue;
+        background-color: lightblue;
+        margin-bottom: 15px;
+      }
+      .columna {
+        background-color: lightgreen;
+        border: 2px solid green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row fila">
+        <!-- Columna1 -->
+        <div class="col-6 columna">
+          Columna 1
+          <div class="row fila">
+            <div class="col columna">
+              Columna anidada 1
+              <div class="row">
+                <div class="col columna">1</div>
+                <div class="col columna">2</div>
+                <div class="col columna">3</div>
+              </div>
+            </div>
+            <div class="col columna">Columna anidada 2</div>
+          </div>
+        </div>
+        <!-- Columna 2 -->
+        <div class="col-6 columna">Columna 2</div>
+      </div>
+    </div>
+
+    <!-- Js Bootstrap -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

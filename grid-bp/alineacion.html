@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alineación</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <style>
+      h1 {
+        text-align: center;
+      }
+      .fila {
+        border: 3px solid blue;
+        background-color: lightblue;
+        margin-bottom: 15px;
+        /* height: 180px; */
+      }
+      .columna {
+        background-color: lightgreen;
+        border: 2px solid green;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <h1>Alineación de columnas</h1>
+      </div>
+      <div class="row justify-content-start fila">
+        <div class="col-3 columna">Columna 1</div>
+        <div class="col-3 columna">Columna 2</div>
+        <div class="col-3 columna">Columna 3</div>
+      </div>
+      <div class="row justify-content-center fila">
+        <div class="col-3 columna">Columna 1</div>
+        <div class="col-3 columna">Columna 2</div>
+        <div class="col-3 columna">Columna 3</div>
+      </div>
+      <div class="row justify-content-end fila">
+        <div class="col-3 columna">Columna 1</div>
+        <div class="col-3 columna">Columna 2</div>
+        <div class="col-3 columna">Columna 3</div>
+      </div>
+
+      <div class="row justify-content-between fila">
+        <div class="col-3 columna">Columna 1</div>
+        <div class="col-3 columna">Columna 2</div>
+        <div class="col-3 columna">Columna 3</div>
+      </div>
+      <div class="row justify-content-around fila">
+        <div class="col-3 columna">Columna 1</div>
+        <div class="col-3 columna">Columna 2</div>
+        <div class="col-3 columna">Columna 3</div>
+      </div>
+      <div class="row justify-content-evenly fila">
+        <div class="col-3 columna">Columna 1</div>
+        <div class="col-3 columna">Columna 2</div>
+        <div class="col-3 columna">Columna 3</div>
+      </div>
+      <div class="row">
+        <h2>Alineación de columnas cross axis</h2>
+      </div>
+      <div class="row align-items-start fila">
+        <div class="col-3 columna">Columna 1</div>
+        <div class="col-3 columna">Columna 2</div>
+        <div class="col-3 columna">Columna 3</div>
+      </div>
+      <div class="row align-items-center fila">
+        <div class="col-3 columna">Columna 1</div>
+        <div class="col-3 columna">Columna 2</div>
+        <div class="col-3 columna">Columna 3</div>
+      </div>
+      <div class="row align-items-end fila">
+        <div class="col-3 columna">Columna 1</div>
+        <div class="col-3 columna">Columna 2</div>
+        <div class="col-3 columna">Columna 3</div>
+      </div>
+      <div class="row fila">
+        <div class="col-3 align-self-center columna">Columna 1</div>
+        <div class="col-3 align-self-end columna">Columna 2</div>
+        <div class="col-3 align-self-start columna">Columna 3</div>
+      </div>
+      <div class="row fila">
+        <div class="col-3 columna">Columna 1</div>
+        <div class="col-3 columna">Columna 2</div>
+        <div class="col-3 columna">Columna 3</div>
+      </div>
+    </div>
+
+    <!-- Js Bootstrap -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

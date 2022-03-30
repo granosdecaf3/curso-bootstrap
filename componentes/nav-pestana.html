@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alertas</title>
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row row-cols-1">
+        <h2>Estilo pesaña</h2>
+        <nav class="nav nav-tabs" id="navigation" role="tablist">
+          <!-- Home -->
+          <a
+            href="#contenido-incio"
+            class="nav-link active"
+            data-toggle="tab"
+            role="tab"
+            aria-selected="true"
+            id="inicio-tab"
+            aria-controls="contenido-incio"
+            >Inicio</a
+          >
+          <!-- Service -->
+          <a
+            href="#contenido-servicio"
+            class="nav-link"
+            data-toggle="tab"
+            role="tab"
+            aria-selected="false"
+            id="servicio-tab"
+            aria-controls="contenido-servicio"
+            >Servicios</a
+          >
+          <!-- Blog -->
+          <a
+            href="#contenido-blog"
+            class="nav-link"
+            data-toggle="tab"
+            role="tab"
+            aria-selected="false"
+            id="blog-tab"
+            aria-controls="contenido-blog"
+            >Blog</a
+          >
+          <!-- Contact -->
+          <a
+            href="#contenido-contacto"
+            class="nav-link"
+            data-toggle="tab"
+            role="tab"
+            aria-selected="false"
+            id="contacto-tab"
+            aria-controls="contenido-contacto"
+            >Contacto</a
+          >
+        </nav>
+        <!-- Contenido -->
+        <div class="tab-content" id="contenido-nav">
+          <!-- Home -->
+          <div
+            class="tab-pane fade show active"
+            role="tab"
+            id="contenido-incio"
+            aria-labelledby="inicio-tab"
+          >
+            <h1>Inicio</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              incidunt a odit nesciunt ex, nemo at illo ipsum dolorem illum, ea
+              molestiae sunt numquam voluptas! Id eveniet doloribus amet velit?
+            </p>
+          </div>
+          <!-- Service -->
+          <div
+            class="tab-pane fade"
+            role="tab"
+            id="contenido-servicio"
+            aria-labelledby="servicio-tab"
+          >
+            <h2>Servicios</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              incidunt a odit nesciunt ex, nemo at illo ipsum dolorem illum, ea
+              molestiae sunt numquam voluptas! Id eveniet doloribus amet velit?
+            </p>
+          </div>
+          <!-- Blog -->
+          <div
+            class="tab-pane fade"
+            role="tab"
+            id="contenido-blog"
+            aria-labelledby="blog-tab"
+          >
+            <h2>Blog</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              incidunt a odit nesciunt ex, nemo at illo ipsum dolorem illum, ea
+              molestiae sunt numquam voluptas! Id eveniet doloribus amet velit?
+            </p>
+          </div>
+          <!-- Contact -->
+          <div
+            class="tab-pane fade"
+            role="tab"
+            id="contenido-contacto"
+            aria-labelledby="contacto-tab"
+          >
+            <h2>Contacto</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              incidunt a odit nesciunt ex, nemo at illo ipsum dolorem illum, ea
+              molestiae sunt numquam voluptas! Id eveniet doloribus amet velit?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Jquery -->
+    <script src="./js/jquery-3.5.0.min.js"></script>
+    <!-- Popper -->
+    <script src="./js/popper.min.js"></script>
+    <!-- JS Bootstrap -->
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,229 @@
+COMPONENTES DE BOOTSTRAP PARTE #3
+----------------------------------
+📒 Modal.
+   🗒 Crear
+      1 -> Botón
+         📒 Clases de estilos botón
+         📌 data-toggle="modal"
+         📌 data-target="#id-contenido-modal"
+
+      2 -> Contenido
+         🔸 modal
+         🔸 fade
+         📌 id=""
+         📌 tabindex="-1"
+
+         -> Hijo
+            🔸 modal-dialog
+            🔸 modal-dialog-scrollable
+               Aplica cuando el contenido del modal es bastante.
+            🔸 modal-dialog-centered
+               Aplica si quieres que el modal se muestre centrado en vertical y horizontal. 
+            
+            -Tamaño--------------------
+               🔸 modal-sm
+               🔸 modal-lg
+               🔸 modal-xl
+            ---------------------------
+
+            -> Hijo
+               🔸 modal-content
+
+               ->Hijo
+                  🔸 modal-header
+                     -> Hijo
+                        📒 Botón cerrar
+                           🔸 close
+                           📌 data-dismiss="modal"
+                           ✍🏽 &times;
+                     
+                  🔸 modal-body
+                     -> Hijo
+                        🔸 modal-title
+                        📒Grid de bootstrap
+
+                  🔸 modal-footer
+                     -> Hijo
+                        🔖 <button>
+                           🔸 Clases de estilo de botón
+                           📌 data-dismiss="modal"
+
+📒 Navegación. 
+   🗒 Crear
+      a) 🔖<ul>
+         ul -> 🔸 nav
+         li -> 🔸 nav-item
+         a  -> 🔸 nav-link
+               🔸 active
+
+      b) 🔖<nav>
+         nav -> 🔸 nav
+         a   -> 🔸 nav-link
+                🔸 active
+   
+   🗒 Alinear en horizontal
+      🔸 justify-content-start
+                        -center
+                        -end
+   
+   🗒 Navegación en vertical
+      🔸 flex-column
+   
+   🗒 Estilos
+      a) Pildora
+         🔸 nav-pills
+
+      b) Pestaña
+         🔸 nav-tabs
+   
+   🗒 Navegación pestaña y JavaScript
+      -> Navegación
+         🔖 <nav> o <ul>
+            🔸 nav
+            🔸 nav-tabs
+            📌 id=""
+            📌 role="tablist"
+
+         🔖 <li>
+            🔸 nav-item
+         
+         🔖 <a>
+            🔸 nav-link
+            🔸 active
+            📌 id=""
+            📌 data-toggle="tab"
+            📌 href="#id-contenido"
+            📌 role="tab"
+            📌 aria-controls="id-contenido"
+            📌 aria-selected="true | false”
+      
+      -> Contenido 
+         🔸 tab-content
+         📌 id=""
+
+         -> Hijo
+            🔸 tab-pane
+            🔸 fade
+
+            🔸 show
+            🔸 active
+               Aplica solo a un elemento. 
+
+            📌 id=""
+            📌 role="tabpanel”
+            📌 aria-labelledby= “id-ancla-perteneciente”
+
+📒 Barras de navegación.  
+   🗒 Crear
+      🔸 navbar
+      🔸 navbar-expand-lg
+                      -md
+                      -sm
+                      -xl
+      🔸 navbar-light --> oscuros
+               -dark --> blancos
+
+      🔸 bg-light
+           -primary
+           -...
+      
+      -> Hijos
+         1º Marca
+            🔖 <a>
+            🔸 navbar-brand
+
+            -> Hijos
+               ✍🏽 Texto
+               🖼 <img>
+                  📌 loading="lazy"
+
+         2º Botón a collapsar
+            🔖 <button> 
+            🔸 navbar-toggler
+            📌 data-toggle="collapse"
+            📌 data-target="#id-contenido-nav"
+            📌 aria-controls="id-contenido-nav"
+            📌 aria-expanded="false"
+
+            -> Hijos
+               🔖 span
+                  🔸 navbar-toggler-icon
+
+         3º Contenido del nav
+            🔸 collapse
+            🔸 navbar-collapse
+            📌 id=""
+
+            -> Hijos
+               🔖 <ul>
+                  🔸 navbar-nav
+
+                  🔖 <li>
+                     🔸 nav-item
+                     🔸 active
+                        Solo aplica a un elemento
+
+                     🔖 <a>
+                        🔸 nav-link
+
+                        🔸disabled
+                        📌 aria-disabled="true"
+
+   🗒 Dropdown
+      🔖 <li>
+         🔸 nav-item
+         🔸 dropdown
+
+         -> Hijos
+            1º <a> (Botón)
+               🔸 nav-link
+               🔸 dropdown-toggle
+               📌 id=""
+               📌 data-toggle="dropdown" 
+               📌 aria-haspopup="true"    
+               📌 aria-expanded="false"
+         
+            2º Contenido del dropdown
+               🔸 dropdown-menu
+               📌 aria-labelledby="id-boton-dropdown"
+
+               -> Hijo
+                  🔖 <a>
+                     🔸 dropdown-item
+
+   🗒 Formulario
+      📒 Formulario en línea
+   
+   🗒 Contenedores
+      🔸 container
+      🔸 container-fluid
+   
+   🗒 Ubicación. 
+      🔸 fixed-top
+              -bottom
+
+      🔸 sticky-top
+
+📒 Popover
+   🗒 Crear
+      📒 Clases de utilidad para botones
+      📌 data-toggle="popover"
+      📌 title="Título del popover"
+      📌 data-content="Contenido del popover"
+   
+   🗒 Ubicación
+      📌 data-placement="top | right | botton | let"
+
+📒 Scrollspy
+   🖐🏾 Antes de...
+      - Tener una navegación
+      - Position relative al body.
+      - Anclajes funcionando 
+   
+   🗒 Crear
+      🔖 <body>
+         📌 data-spy="scroll" 
+         📌 data-target="id-nav"
+      
+      🔖 nav
+         📌 id=""

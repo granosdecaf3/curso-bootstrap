@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bordes</title>
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <style>
+      body {
+        background-color: #2f2f2f;
+      }
+      .caja {
+        --tamano: 180px;
+        height: var(--tamano);
+        width: var(--tamano);
+        margin: 10px;
+        background-color: #212529;
+        color: #fff;
+        text-align: center;
+        padding: 1rem;
+      }
+      .caja-rectangular {
+        width: 70%;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <!-- <div class="row">
+               <h1 class="col-12 text-warning">Bordes</h1>
+               <h2 class="col-12 text-white">Colores y ubicación</h2>
+               <article class="border border-primary border-0 caja">1</article>
+               <article class="border-top border-secondary caja">2</article>
+               <article class="border-right border-success caja">3</article>
+               <article class="border-bottom border-danger caja">4</article>
+               <article class="border-left border-warning caja">5</article>
+               <article class="border border-info border-top-0 caja">6</article>
+               <article class="border border-light border-right-0 caja">7</article>
+               <article class="border border-dark border-bottom-0 caja">8</article>
+               <article class="border border-white border-left-0 caja">9</article>
+          </div> -->
+      <!-- <div class="row">
+        <h2 class="col-12 text-white">Bordes redondeados</h2>
+        <article class="rounded rounded-0 caja">1</article>
+        <article class="rounded-circle caja">2</article>
+        <article class="rounded-pill caja caja-rectangular">3</article>
+        <article class="rounded-top caja">4</article>
+        <article class="rounded-right caja">5</article>
+        <article class="rounded-bottom caja">6</article>
+        <article class="rounded-left caja">7</article>
+        <article class="rounded-sm caja">8</article>
+        <article class="rounded-lg caja">9</article>
+      </div> -->
+      <div class="row">
+        <h2 class="text-white">Tamaño de borde</h2>
+        <article class="caja border border-primary border-1">
+          Border tamaño:1
+        </article>
+        <article class="caja border border-secondary border-2">
+          Border tamaño:2
+        </article>
+        <article class="caja border border-success border-3">
+          Border tamaño:3
+        </article>
+        <article class="caja border border-warning border-4">
+          Border tamaño:4
+        </article>
+        <article class="caja border border-danger border-5">
+          Border tamaño:5
+        </article>
+      </div>
+    </section>
+
+    <!-- JS Bootstrap -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media object</title>
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <style>
+      :root {
+        --color-white-blue: #eff2f5;
+      }
+      body,
+      .bg-white-blue {
+        background-color: var(--color-white-blue);
+      }
+      .media__img {
+        --tamano: 50px;
+        height: var(--tamano);
+        width: var(--tamano);
+        object-fit: cover;
+        margin-right: 10px;
+        border-radius: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container bg-white rounded-lg">
+      <div class="row row-cols-1 m-2">
+        <h1 class="text-center mb-5">Media object</h1>
+        <!-- Object media -->
+        <div class="media mb-3">
+          <img
+            src="./img/woman.jpeg"
+            alt="Foto de perfil"
+            class="media__img mr-2 align-self-center"
+          />
+          <div class="media-body">
+            <div class="bg-white-blue p-3 rounded-lg">
+              <h2>Jane Doe</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Cupiditate adipisci dignissimos voluptatum alias explicabo!
+                Earum reiciendis minima aut quasi perspiciatis consequatur,
+                doloribus quaerat similique alias aspernatur voluptates porro!
+                Quibusdam iure porro dolorem voluptatum aliquam quo excepturi
+                libero, suscipit nulla explicabo! A non quas illo facilis porro
+                repellendus fugit. Perspiciatis, ea?
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Object media -->
+        <div class="media mb-3">
+          <img
+            src="./img/man.jpeg"
+            alt="Foto de perfil"
+            class="media__img mr-2 order-1"
+          />
+          <div class="media-body">
+            <div class="bg-white-blue p-3 rounded-lg">
+              <h2>John Doe</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Blanditiis, aperiam. lorem
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Object media <ul> -->
+        <ul class="list-unstyled">
+          <li class="media mb-3">
+            <img src="./img/man.jpeg" alt="Foto de perfil" class="media__img" />
+            <div class="media-body">
+              <p class="bg-white-blue p-3 rounded-lg">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Aliquam, inventore qui laudantium maxime quibusdam obcaecati
+                eveniet iusto doloremque sapiente neque.
+              </p>
+            </div>
+          </li>
+          <li class="media">
+            <img
+              src="./img/woman.jpeg"
+              alt="Foto de perfil"
+              class="media__img"
+            />
+            <div class="media-body">
+              <p class="bg-white-blue p-3 rounded-lg">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque,
+                ratione.
+              </p>
+              <div class="media">
+                <img
+                  src="./img/man.jpeg"
+                  alt="Foto de perfil"
+                  class="media__img"
+                />
+                <div class="media-body">
+                  <p class="bg-white-blue p-3 rounded-lg">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Expedita possimus eius aperiam, inventore voluptatibus
+                    corrupti, suscipit explicabo illo eos provident obcaecati
+                    sequi numquam tempore blanditiis.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Jquery -->
+    <script src="./js/jquery-3.5.0.min.js"></script>
+    <!-- Popper -->
+    <script src="./js/popper.min.js"></script>
+    <!-- JS Bootstrap -->
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>

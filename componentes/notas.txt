@@ -1,0 +1,232 @@
+COMPONENTES DE BOOTSTRAP PARTE #1
+----------------------------------
+📒 Alertas
+   🗒 Relleno
+      🔸 alert
+
+   🗒 Colores
+      🔸 alert-primary
+              -secondary
+              -danger
+              -success
+              -warning
+              -light
+              -info
+              -dark
+
+   🗒 Enlaces
+      🔸 alert-link
+
+   🗒 Contenido adicional.
+      🔸 alert-heading
+   
+   🗒 Cerrar alertas.
+      🔸 alert-dismissible 
+            dismissible = descartable
+      🔸 fade
+      🔸 show
+      📒 Botón de cierre. 
+         🔸 close
+         📌 aria-label= "Close"
+         📌 data-dismiss= "alert"
+         🖼 &times
+
+📒 Botones
+   🔖 <a>| <button> | <input> | <label>
+
+   🗒 Relleno
+      🔸 btn
+
+   🗒 Colores de fondo
+      🔸 btn-primary
+            -secondary
+            -success
+            -danger
+            -warning
+            -info
+            -light
+            -dark
+            -link
+
+   🗒 Colores de borde
+      🔸 btn-outline-primary
+                    -secondary
+                    -success
+                    -danger
+                    -warning
+                    -info
+                    -light
+                    -dark
+
+   🗒 Tamaños
+      🔸 btn-sm
+            -lg
+            -block
+   
+   🗒 Estados
+    -> Activo
+      🔖 <button>
+
+      🔖 <a> 
+         🔸 active
+         📌 aria-pressed = "true"
+   
+    -> Desactivado
+      🔖 <button>
+         📌 disabled
+
+      🔖 <a>
+         🔸 disabled
+         📌 aria-disabled = "true"
+
+    -> Alternar
+      🔖 <button>
+         📌 data-toggle = “button”
+         📌 aria-pressed= “false”
+
+📒 Grupo de Botones
+   🗒 Agrupar
+      🔸 btn-group
+   
+   🗒 Tamaños
+      🔸 btn-group-sm
+                  -lg
+   
+   🗒 Grupo horientación vertical.
+      🔸 btn-group-vertical
+
+   🗒 Agrupar grupos
+      🔸 btn-toolbar
+   
+   🗒 Estado
+     -> Alternar
+         Elemento padre:
+            🔸 btn-group-toggle
+            📌 data-toggle= "buttons"
+
+         Elemento hijo
+            🔸 active
+            📌 id
+            📌 checked
+
+📒 Badges o insignias. 
+   🗒 Relleno
+      🔸 badge
+
+   🗒 Colores
+      🔸 badge-primary
+              -secondary
+              -danger
+              -success
+              -warning
+              -light
+              -info
+              -dark
+   
+   🗒 Bordes redondeados.
+      🔸 badge-pill
+   
+   🗒 Badges & etiquetas de encabezado.
+
+   🗒 Badges & etiqueta button
+
+📒 Breadcrumbs
+   🗒 Crear 
+      🔸 breadcrumb
+      🔸 breadcrumb-item
+      🔸 active
+      📌 aria-current = “page”
+      🔖 <nav>
+      🔖 <ol> 
+
+   🗒 Separador
+      👩🏽‍💻
+      .breadcrumb-item + .breadcrumb-item::before {
+         color: #6c757d;
+         content: "/";
+      }
+
+📒 Carousel
+   🗒 Crear
+      -> Elemento padre
+         🔸 carousel
+         📌 id
+         📌 data-ride="carousel"
+
+         -> Elemento padre 
+            🔸 carousel-inner
+
+      -> Elemento hijo
+         🔸 carousel-item
+         🔸 active
+         🔖 <img>
+               🔸 d-block
+               🔸 w-100
+   
+   🗒 Deslizamiento
+      🔸 slide
+
+   🗒 Crossfade
+      🔸 carousel-fade
+   
+   🗒 Intervalos individuales. 
+      📌 data-interval=“”
+   
+   🗒 Controles. 
+      🔖 <a> 
+         🔸 carousel-control-prev
+         🔸 carousel-control-next
+         📌 href=""
+         📌 data-slide = “prev”
+         📌 data-slide = “next”
+         
+         🔖 <span>
+            🔸 carousel-control-prev-icon
+            🔸 carousel-control-next-icon
+            📌 aria-hidden = “true” 
+            📌 sr-only
+   
+   🗒 Indicadores
+      🔖 <ol>
+         🔸 carousel-indicators
+      🔖 <li>
+         🔸 active 
+         📌 data-target=""
+         📌 data-slide-to=""
+      
+      -> Cambiar forma
+         👩🏽‍💻
+         .carousel-indicators li{
+            width: ;
+            height: ; 
+            border-radius: ; 
+            background-color: ; 
+         }
+   
+   🗒 Diapositivas con texto
+      🔸 carousel-caption
+
+📒 Jumbotron
+   🔸 jumbotron
+
+📒 Objeto multimedia
+   🗒 Crear
+      -> Elemento padre
+         🔸 media
+      
+      -> Elemento hijo
+         🔖 <img>
+         🔸 media-body
+   
+   🗒 Alineación
+      🔸 align-self-start
+                   -center
+                   -end
+   
+   🗒 Orden
+   
+   🗒 Lista de objetos multimedia
+      🔖 <ul> 
+      🔖 <li>
+         🔸 media
+         ...

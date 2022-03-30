@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios</title>
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  </head>
+  <body>
+    <h1 class="text-center">Modal</h1>
+    <!-- Btn abril modal -->
+    <button
+      class="btn btn-primary"
+      data-toggle="modal"
+      data-target="#contenedor-modal"
+    >
+      Abrir modal
+    </button>
+    <!-- Modal content -->
+    <div
+      class="modal fade"
+      id="contenedor-modal"
+      tabindex="-1"
+      data-backdrop="static"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <!-- Header -->
+          <div class="modal-header">
+            <h2 class="modal-title">Titulo del modal</h2>
+            <button class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div>
+          <!-- Body -->
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-4 bg-primary">Columna de 4</div>
+                <div class="col-4 bg-info">Columna de 4</div>
+                <div class="col-4 bg-danger">Columna de 4</div>
+                <div class="col-6 bg-success">Columna de 6</div>
+                <div class="col-6 bg-seconday">Columna de 6</div>
+                <div class="col-12 bg-warning">Columna 12</div>
+              </div>
+            </div>
+          </div>
+          <!-- Footer -->
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-dismiss="modal">
+              Cerrar
+            </button>
+            <button class="btn btn-primary">Guardar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Jquery -->
+    <script src="./js/jquery-3.5.0.min.js"></script>
+    <!-- Popper -->
+    <script src="./js/popper.min.js"></script>
+    <!-- JS Bootstrap -->
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>

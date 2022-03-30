@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Negación</title>
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row row-cols-1">
+        <h1>Navegación</h1>
+        <h2>Con ul</h2>
+        <ul class="nav justify-content-center nav-pills">
+          <li class="nav-item">
+            <a href="" class="nav-link">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Contacto</a>
+          </li>
+        </ul>
+
+        <hr />
+        <!-- 
+          nav = display: flex;
+          justify-content-center|end|start
+          flex-column
+         -->
+
+        <h2>Con nav</h2>
+        <nav class="nav justify-content-end">
+          <a href="#" class="nav-link">Inicio</a>
+          <a href="#" class="nav-link">Servicios</a>
+          <a href="#" class="nav-link">Blog</a>
+          <a href="#" class="nav-link">Contacto</a>
+        </nav>
+        <h2>Elementos en columna</h2>
+        <nav class="nav flex-column">
+          <a href="#" class="nav-link">Inicio</a>
+          <a href="#" class="nav-link">Servicios</a>
+          <a href="#" class="nav-link">Blog</a>
+          <a href="#" class="nav-link">Contacto</a>
+        </nav>
+        <h2>Estilo pildora</h2>
+        <nav class="nav nav-pills">
+          <a href="#" class="nav-link active">Inicio</a>
+          <a href="#" class="nav-link">Servicios</a>
+          <a href="#" class="nav-link">Blog</a>
+          <a href="#" class="nav-link">Contacto</a>
+        </nav>
+        <h2>Estilo pesaña</h2>
+        <nav class="nav nav-tabs">
+          <a href="#" class="nav-link active">Inicio</a>
+          <a href="#" class="nav-link">Servicios</a>
+          <a href="#" class="nav-link">Blog</a>
+          <a href="#" class="nav-link">Contacto</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Jquery -->
+    <script src="./js/jquery-3.5.0.min.js"></script>
+    <!-- Popper -->
+    <script src="./js/popper.min.js"></script>
+    <!-- JS Bootstrap -->
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>

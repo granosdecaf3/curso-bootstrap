@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ordendamiento</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <style>
+      .fila {
+        border: 2px solid blue;
+        background-color: lightblue;
+        margin-bottom: 15px;
+      }
+      .columna {
+        background-color: lightgreen;
+        border: 2px solid green;
+        text-align: center;
+      }
+      .columna:nth-child(even) {
+        background-color: palegoldenrod;
+        border: 2px solid yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row fila">
+        <div class="col-2 columna order-last">1</div>
+        <div class="col-2 order-12 columna">2</div>
+        <div class="col-2 order-lg-first columna">3</div>
+      </div>
+    </div>
+
+    <!-- JS Bootstrap -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
